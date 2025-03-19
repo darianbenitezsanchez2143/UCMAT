@@ -72,7 +72,7 @@
         
         <label for="checklist">Select Checklist Items:</label>
         <select id="checklist" multiple>
-			<option value="UC MAT Participation|https://ky.opensalt.net/uri/2f7e588a-fdda-11ef-9f6a-0242ac1e0003">0.0 UC MAT Participation</option>
+			<option value="UC MAT Participation|https://ky.opensalt.net/uri/2f7e588a-fdda-11ef-9f6a-0242ac1e0003|https://ky.opensalt.net/uri/2f7e588a-fdda-11ef-9f6a-0242ac1e0003">0.0 UC MAT Participation</option>
 			<option value="Pillar IV - Acceptance|https://ky.opensalt.net/uri/ca69b4d2-e7e3-11ef-9b97-0242ac150003">1 Pillar IV - Acceptance</option>
 			<option value="Application Acceptance|https://ky.opensalt.net/uri/fb9b0628-e7e3-11ef-976e-0242ac150003">1.1 Application Acceptance</option>
 			<option value="Signed KY Code of Ethics|https://ky.opensalt.net/uri/26748cca-e7e4-11ef-b9a9-0242ac150003">1.2 Signed KY Code of Ethics</option>
@@ -124,7 +124,7 @@
             const closingStatement = document.getElementById("closingStatement").value;
             const selectedChecklist = Array.from(document.getElementById("checklist").selectedOptions).map(option => {
                 const [title, link] = option.value.split('|');
-                return `{{ _self.achievementLine('${title}', '${link}', true) }}`;
+                return `{{ _self.achievementLine('${title}', '${link}' in context.credentialIds)}}`;
             }).join('\n\t');
 
             const twigTemplate = `
@@ -144,7 +144,7 @@
 {%- endset -%}
 
 {%- set _progressBar -%}
-	{{ _self.progressBar('Teacher Ready - ${progressBar}% COMPLETE', ${progressBar}) }}
+	{{ _self.progressBar('Teacher Ready Progress', ${progressBar}) }}
 {%- endset -%}
 
 {%- set _checklistNarrative -%}
