@@ -14,7 +14,7 @@
     </style>
 </head>
 <body>
-    <h2>TWIG Email Generator</h2>
+    <h2>TWIG Email Generator with Progress Bar</h2>
     <form id="twigForm">
         <label for="salutation">Set Salutation:</label>
         <textarea id="salutation"></textarea>
@@ -27,24 +27,94 @@
         
         <label for="badgeImage">Select Badge Image:</label>
         <select id="badgeImage">
-            <option value="UC_SEAL_2C.png">UC_SEAL_2C</option>
-            <option value="Pillar_1.png">Pillar 1</option>
-            <option value="Pillar_2.png">Pillar 2</option>
-            <option value="Pillar_3.png">Pillar 3</option>
-            <option value="Pillar_4.png">Pillar 4</option>
+            <option value="0.0 UC MAT Participation.png">0.0 UC MAT Participation</option>
+			<option value="1 Pillar IV - Acceptance.png">1 Pillar IV - Acceptance</option>
+			<option value="1.1 Application Acceptance.png">1.1 Application Acceptance</option>
+			<option value="1.2 Signed KY Code of Ethics.png">1.2 Signed KY Code of Ethics</option>
+			<option value="1.3 Signed Character and Fitness Form.png">1.3 Signed Character and Fitness Form</option>
+			<option value="1.4 Background Check 1 Complete.png">1.4 Background Check 1 Complete</option>
+			<option value="A Track A Satisfied Pillars V and VI.png">A Track A Satisfied Pillars V and VI</option>
+			<option value="2.A Pillar V Complete (A).png">2.A Pillar V Complete (A)</option>
+			<option value="2.A.1 Clinical I Complete (EDOL-520).png">2.A.1 Clinical I Complete (EDOL-520)</option>
+			<option value="2.A.2 Clinical II Complete (EDOL-541).png">2.A.2 Clinical II Complete (EDOL-541)</option>
+			<option value="2.A.3 Observation Hours Complete.png">2.A.3 Observation Hours Complete</option>
+			<option value="2.A.4 Praxis II Content Satisfied.png">2.A.4 Praxis II Content Satisfied</option>
+			<option value="2.A.5 Favorable Disposition 1: Clinical I.png">2.A.5 Favorable Disposition 1: Clinical I</option>
+			<option value="2.A.6 Favorable Disposition 2: Clinical II.png">2.A.6 Favorable Disposition 2: Clinical II</option>
+			<option value="2.A.7 Background Check 2 Complete.png">2.A.7 Background Check 2 Complete</option>
+			<option value="2.A.8 3.0 GPA for all Before Final Course.png">2.A.8 3.0 GPA for all Before Final Course</option>
+			<option value="3.A Pillar VI Complete (A).png">3.A Pillar VI Complete (A)</option>
+			<option value="3.A.1 EDOL 698 Application Acceptance.png">3.A.1 EDOL 698 Application Acceptance</option>
+			<option value="3.A.2 Clinical III Complete (EDOL 698).png">3.A.2 Clinical III Complete (EDOL 698)</option>
+			<option value="3.A.3 Favorable Disposition 3.png">3.A.3 Favorable Disposition 3</option>
+			<option value="3.A.4 Favorable Disposition 4.png">3.A.4 Favorable Disposition 4</option>
+			<option value="3.A.5 Praxis II PLT Satisfied.png">3.A.5 Praxis II PLT Satisfied</option>
+			<option value="3.A.6 Clinical III ePortfolio Accepted.png">3.A.6 Clinical III ePortfolio Accepted</option>
+			<option value="3.A.7 3.0 GPA with All Courses Complete.png">3.A.7 3.0 GPA with All Courses Complete</option>
+			<option value="3.A.8 Graduation Application.png">3.A.8 Graduation Application</option>
+			<option value="B Track B Acceptance and Satisfied Pillars V and VI.png">B Track B Acceptance and Satisfied Pillars V and VI</option>
+			<option value="1.B Option 6 Program Acceptance.png">1.B Option 6 Program Acceptance</option>
+			<option value="1.B.1 Certificate Application-Temporary Provisional (CA-TP).png">1.B.1 Certificate Application-Temporary Provisional (CA-TP)</option>
+			<option value="1.B.2 Evidence of Employment Accepted.png">1.B.2 Evidence of Employment Accepted</option>
+			<option value="2.B Pillar V Complete (B).png">2.B Pillar V Complete (B)</option>
+			<option value="2.B.1 Clinical I Complete (EDOL-520).png">2.B.1 Clinical I Complete (EDOL-520)</option>
+			<option value="2.B.2 Clinical II Complete (EDOL-541).png">2.B.2 Clinical II Complete (EDOL-541)</option>
+			<option value="2.B.3 Observation Hours Complete.png">2.B.3 Observation Hours Complete</option>
+			<option value="2.B.4 Praxis II Content Satisfied.png">2.B.4 Praxis II Content Satisfied</option>
+			<option value="2.B.5 Favorable Disposition 1: Clinical I.png">2.B.5 Favorable Disposition 1: Clinical I</option>
+			<option value="2.B.6 Favorable Disposition 2: Clinical II.png">2.B.6 Favorable Disposition 2: Clinical II</option>
+			<option value="2.B.7 Background Check 2 Complete.png">2.B.7 Background Check 2 Complete</option>
+			<option value="2.B.8 3.0 GPA for all Before Final Course.png">2.B.8 3.0 GPA for all Before Final Course</option>
+			<option value="3.B Pillar VI Complete (B).png">3.B Pillar VI Complete (B)</option>
+			<option value="3.B.1 EDOL 699 Application Acceptance.png">3.B.1 EDOL 699 Application Acceptance</option>
+			<option value="3.B.2 Clinical III Complete (EDOL 699).png">3.B.2 Clinical III Complete (EDOL 699)</option>
+			<option value="3.B.3 Favorable Disposition 3.png">3.B.3 Favorable Disposition 3</option>
+			<option value="3.B.4 Favorable Disposition 4.png">3.B.4 Favorable Disposition 4</option>
+			<option value="3.B.5 Praxis II PLT Satisfied.png">3.B.5 Praxis II PLT Satisfied</option>
+			<option value="3.B.6 Clinical III ePortfolio Accepted.png">3.B.6 Clinical III ePortfolio Accepted</option>
+			<option value="3.B.7 3.0 GPA with All Courses Complete.png">3.B.7 3.0 GPA with All Courses Complete</option>
+			<option value="3.B.8 Graduation Application.png">3.B.8 Graduation Application</option>
+			<option value="4 Recommendation for Professional Licensure.png">4 Recommendation for Professional Licensure</option>
+
         </select>
         
-        <label for="checklistNarrative">Set Checklist Narrative:</label>
+        <label for="progressBar">Set Progress:</label>
+        <textarea id="progressBar"></textarea>
+		
+		<label for="checklistNarrative">Set Checklist Narrative:</label>
         <textarea id="checklistNarrative"></textarea>
         
         <label for="checklist">Select Checklist Items:</label>
         <select id="checklist" multiple>
-            <option value="UC Pilot Participation Badge|https://ky.opensalt.net/uri/a391099e-4f6f-11ef-972d-0242ac1e0003">UC Pilot Participation</option>
-            <option value="UC Enrollment Complete|https://ky.opensalt.net/uri/3440838c-4f7c-11ef-9cca-0242ac1e0003">UC Enrollment Complete</option>
-            <option value="Ed Major Registered|https://ky.opensalt.net/uri/3cb233ee-4f7c-11ef-bd06-0242ac1e0003">Ed Major Registered</option>
-            <option value="Conditionally Admitted (With Option 9)|https://ky.opensalt.net/uri/4b2da0b6-4f7c-11ef-921a-0242ac1e0003">Conditionally Admitted (With Option 9)</option>
-            <option value="EDUC 237 - Effective Teaching|https://ky.opensalt.net/uri/8c2df6a6-4f7c-11ef-a706-0242ac1e0003">EDUC 237 - Effective Teaching</option>
-            <option value="Teacher Ed Invited|https://ky.opensalt.net/uri/bb73015e-4f7c-11ef-9060-0242ac1e0003">Teacher Ed Invited</option>
+			<option value="UC MAT Participation|https://ky.opensalt.net/uri/2f7e588a-fdda-11ef-9f6a-0242ac1e0003">0.0 UC MAT Participation</option>
+			<option value="Pillar IV - Acceptance|https://ky.opensalt.net/uri/ca69b4d2-e7e3-11ef-9b97-0242ac150003">1 Pillar IV - Acceptance</option>
+			<option value="Application Acceptance|https://ky.opensalt.net/uri/fb9b0628-e7e3-11ef-976e-0242ac150003">1.1 Application Acceptance</option>
+			<option value="Signed KY Code of Ethics|https://ky.opensalt.net/uri/26748cca-e7e4-11ef-b9a9-0242ac150003">1.2 Signed KY Code of Ethics</option>
+			<option value="Signed Character and Fitness Form|https://ky.opensalt.net/uri/4684fcf2-e7e4-11ef-9b04-0242ac150003">1.3 Signed Character and Fitness Form</option>
+			<option value="Background Check 1 Complete|https://ky.opensalt.net/uri/5b074b6a-e7e6-11ef-a070-0242ac150003">1.4 Background Check 1 Complete</option>
+			<option value="Track A Satisfied Pillars V and VI|https://ky.opensalt.net/uri/ca047036-e84c-11ef-816b-0242ac1e0003">A Track A Satisfied Pillars V and VI</option>
+			<option value="Pillar V Complete (A)|https://ky.opensalt.net/uri/59f4992e-e7ed-11ef-a035-0242ac150003">2.A Pillar V Complete (A)</option>
+			<option value="Clinical I Complete (EDOL-520)|https://ky.opensalt.net/uri/90bf55da-e7ec-11ef-a87d-0242ac150003">2.A.1 Clinical I Complete (EDOL-520)</option>
+			<option value="Clinical II Complete (EDOL-541)|https://ky.opensalt.net/uri/e02763c4-e7ec-11ef-99c5-0242ac150003">2.A.2 Clinical II Complete (EDOL-541)</option>
+			<option value="Observation Hours Complete|https://ky.opensalt.net/uri/0f44a69e-e7ed-11ef-b32c-0242ac150003">2.A.3 Observation Hours Complete</option>
+			<option value="Praxis II Content Satisfied|https://ky.opensalt.net/uri/e0427558-e7ef-11ef-9bd5-0242ac150003">2.A.4 Praxis II Content Satisfied</option>
+			<option value="Favorable Disposition 1: Clinical I|https://ky.opensalt.net/uri/171d771c-e7f0-11ef-89f1-0242ac150003">2.A.5 Favorable Disposition 1: Clinical I</option>
+			<option value="Favorable Disposition 2: Clinical II|https://ky.opensalt.net/uri/21cb2b1e-e7f0-11ef-8089-0242ac150003">2.A.6 Favorable Disposition 2: Clinical II</option>
+			<option value="Signed KY Code of Ethics|https://ky.opensalt.net/uri/36f4f9fc-e7f0-11ef-b492-0242ac150003">1.2.V Signed KY Code of Ethics</option>
+			<option value="Background Check 2 Complete|https://ky.opensalt.net/uri/517160a4-e7f0-11ef-9812-0242ac150003">2.A.7 Background Check 2 Complete</option>
+			<option value="3.0 GPA for all Before Final Course|https://ky.opensalt.net/uri/64945a4c-e7f0-11ef-ab69-0242ac150003">2.A.8 3.0 GPA for all Before Final Course</option>
+			<option value="Pillar VI Complete (A)|https://ky.opensalt.net/uri/18d79db4-e7f3-11ef-b033-0242ac150003">3.A Pillar VI Complete (A)</option>
+			<option value="EDOL 698 Application Acceptance|https://ky.opensalt.net/uri/0b03fdc8-e84c-11ef-9cd6-0242ac1e0003">3.A.1 EDOL 698 Application Acceptance</option>
+			<option value="Clinical III Complete (EDOL 698)|https://ky.opensalt.net/uri/201daede-e84c-11ef-b481-0242ac1e0003">3.A.2 Clinical III Complete (EDOL 698)</option>
+			<option value="Favorable Disposition 3|https://ky.opensalt.net/uri/4be64bc0-e84c-11ef-afe9-0242ac1e0003">3.A.3 Favorable Disposition 3</option>
+			<option value="Favorable Disposition 4|https://ky.opensalt.net/uri/543bbada-e84c-11ef-b507-0242ac1e0003">3.A.4 Favorable Disposition 4</option>
+			<option value="Praxis II PLT Satisfied|https://ky.opensalt.net/uri/556d2b64-e84c-11ef-9f1c-0242ac1e0003">3.A.5 Praxis II PLT Satisfied</option>
+			<option value="Clinical III ePortfolio Accepted|https://ky.opensalt.net/uri/56c5c520-e84c-11ef-8c71-0242ac1e0003">3.A.6 Clinical III ePortfolio Accepted</option>
+			<option value="3.0 GPA with All Courses Complete|https://ky.opensalt.net/uri/57e30f9e-e84c-11ef-8ceb-0242ac1e0003">3.A.7 3.0 GPA with All Courses Complete</option>
+			<option value="Graduation Application|https://ky.opensalt.net/uri/886b98ca-e84c-11ef-ac74-0242ac1e0003">3.A.8 Graduation Application</option>
+			<option value="Recommendation for Professional Licensure|https://ky.opensalt.net/uri/b952d94e-e84c-11ef-adb6-0242ac1e0003">4 Recommendation for Professional Licensure</option>
+
+
         </select>
         
         <label for="closingStatement">Set Closing Statement:</label>
@@ -63,6 +133,7 @@
             const badgeName = document.getElementById("badgeName").value;
             const badgeAwardNarrative = document.getElementById("badgeAwardNarrative").value;
             const badgeImage = document.getElementById("badgeImage").value;
+			const progressBar = document.getElementById("progressBar").value;
             const checklistNarrative = document.getElementById("checklistNarrative").value;
             const closingStatement = document.getElementById("closingStatement").value;
             const selectedChecklist = Array.from(document.getElementById("checklist").selectedOptions).map(option => {
@@ -87,6 +158,7 @@
 {%- endset -%}
 
 {%- set _progressBar -%}
+	{{ _self.progressBar('Teacher Ready - ${progressBar}% COMPLETE', ${progressBar}) }}
 {%- endset -%}
 
 {%- set _checklistNarrative -%}
