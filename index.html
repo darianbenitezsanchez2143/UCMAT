@@ -5,15 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TWIG Email Generator</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        label { display: block; margin-top: 10px; }
-        textarea, input, select { width: 100%; padding: 8px; margin-top: 5px; }
-        button { margin-top: 10px; padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
-        button:hover { background-color: #45a049; }
-        pre { background: #f4f4f4; padding: 10px; border: 1px solid #ddd; }
-    </style>
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			margin: 0;
+			background-color: #f7fafd;
+			color: #333;
+		}
+	
+		header {
+			background-color: #014173;
+			color: white;
+			padding: 20px 40px;
+			text-align: center;
+			font-size: 28px;
+			font-weight: bold;
+			letter-spacing: 1px;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+		}
+	
+		h2 {
+			text-align: center;
+			color: #014173;
+			margin-top: 30px;
+		}
+	
+		form {
+			background: #ffffff;
+			max-width: 800px;
+			margin: 30px auto;
+			padding: 30px;
+			border-radius: 12px;
+			box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+		}
+	
+		label {
+			display: block;
+			margin-top: 15px;
+			font-weight: 600;
+			color: #014173;
+		}
+	
+		textarea,
+		input,
+		select {
+			width: 100%;
+			padding: 10px;
+			margin-top: 6px;
+			border: 1px solid #ccc;
+			border-radius: 6px;
+			font-size: 14px;
+		}
+	
+		button {
+			display: inline-block;
+			margin-top: 20px;
+			padding: 12px 20px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 6px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+	
+		button:hover {
+			background-color: #45a049;
+		}
+	
+		pre {
+			background: #f0f4f8;
+			padding: 20px;
+			margin: 30px auto;
+			max-width: 800px;
+			border-radius: 8px;
+			overflow-x: auto;
+			font-size: 14px;
+			line-height: 1.5;
+			border: 1px solid #dbe5ec;
+		}
+	</style>
 </head>
 <body>
+	<header>
+		Public Consulting Group
+	</header>
     <h2>TWIG Email Generator with Progress Bar</h2>
     <form id="twigForm">
         <label for="salutation">Set Salutation:</label>
@@ -110,7 +186,7 @@
 			<option value="2.B.4 Praxis II Content Satisfied|https://ky.opensalt.net/uri/65080e40-e85b-11ef-88eb-0242ac1e0003">2.B.4 Praxis II Content Satisfied</option>
 			<option value="2.B.5 Favorable Disposition 1: Clinical I|https://ky.opensalt.net/uri/65086c00-e85b-11ef-81ca-0242ac1e0003">2.B.5 Favorable Disposition 1: Clinical I</option>
 			<option value="2.B.6 Favorable Disposition 2: Clinical II|https://ky.opensalt.net/uri/6508caec-e85b-11ef-9414-0242ac1e0003">2.B.6 Favorable Disposition 2: Clinical II</option>
-			<option value="2.B.7 Background Check 2 Complete|https://ky.opensalt.net/uri/6509280c-e85b-11ef-8eff-0242ac1e0003">1.2.V Signed KY Code of Ethics</option>
+			<option value="1.2.V Signed KY Code of Ethics|https://ky.opensalt.net/uri/6509280c-e85b-11ef-8eff-0242ac1e0003">1.2.V Signed KY Code of Ethics</option>
 			<option value="2.B.7 Background Check 2 Complete|https://ky.opensalt.net/uri/650986b2-e85b-11ef-9b88-0242ac150003">2.B.7 Background Check 2 Complete</option>
 			<option value="2.B.8 3.0 GPA for all Before Final Course|https://ky.opensalt.net/uri/6509e558-e85b-11ef-983d-0242ac1e0003">2.B.8 3.0 GPA for all Before Final Course</option>
 			<option value="3.B Pillar VI Complete (B)|https://ky.opensalt.net/uri/650a4570-e85b-11ef-9f8c-0242ac1e0003">3.B Pillar VI Complete (B)</option>
@@ -120,7 +196,7 @@
 			<option value="3.B.4 Favorable Disposition 4|https://ky.opensalt.net/uri/650bf7bc-e85b-11ef-ada3-0242ac1e0003">3.B.4 Favorable Disposition 4</option>
 			<option value="3.B.5 Praxis II PLT Satisfied|https://ky.opensalt.net/uri/650c54dc-e85b-11ef-8aeb-0242ac1e0003">3.B.5 Praxis II PLT Satisfied</option>
 			<option value="3.B.6 Clinical III ePortfolio Accepted|https://ky.opensalt.net/uri/650cb288-e85b-11ef-b035-0242ac1e0003">3.B.6 Clinical III ePortfolio Accepted</option>
-			<option value="3.B.7 3.0 GPA with All Courses Complete|https://ky.opensalt.net/uri/650d0f58-e85b-11ef-aed5-0242ac1e0003">3.B.7 3.0 GPA with All Courses Complete</option>
+			<option value="1.2.VI Signed KY Code of Ethics|https://ky.opensalt.net/uri/650d0f58-e85b-11ef-aed5-0242ac1e0003">3.B.7 3.0 GPA with All Courses Complete</option>
 			<option value="3.B.7 3.0 GPA with All Courses Complete|https://ky.opensalt.net/uri/650d6bd8-e85b-11ef-b20c-0242ac1e0003">1.2.VI Signed KY Code of Ethics</option>
 			<option value="3.B.8 Graduation Application|https://ky.opensalt.net/uri/650dcaec-e85b-11ef-a281-0242ac1e0003">3.B.8 Graduation Application</option>
 			<option value="4 Recommendation for Professional Licensure|https://ky.opensalt.net/uri/b952d94e-e84c-11ef-adb6-0242ac1e0003">4 Recommendation for Professional Licensure</option>
@@ -135,7 +211,7 @@
         <button type="button" onclick="generateTwig()">Generate TWIG Code</button>
     </form>
 
-    <h3>Generated TWIG Code:</h3>
+    <h3 style="font-size:larger; text-align: center;">Generated TWIG Code Below:</h3>
     <pre id="twigOutput"></pre>
     <button onclick="copyToClipboard()">Copy Code</button>
 
